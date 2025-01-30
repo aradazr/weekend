@@ -1,0 +1,9 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /weekend/
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCont %{REQUEST_FILENAME} !-d
+  RewriteCont %{REQUEST_FILENAME} !-l
+  RewriteRule . /weekend/index.html [L]
+</IfModule>
+  
